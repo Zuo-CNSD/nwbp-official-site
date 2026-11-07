@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f8f7" />
+    <meta name="description" content="NWBP 是一款跨平台桌面音乐播放器。连接哔哩哔哩、网易云音乐与本地音乐，提供桌面歌词、灵活播放队列和纯粹的黑白界面。下载正式版 1.00。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NWBP — 把喜爱的声音，放回桌面" />
+    <meta property="og:description" content="跨平台桌面音乐播放器。B 站、网易云与本地音乐，一个窗口自在聆听。" />
+    <meta property="og:image" content="assets/search-current.png" />
+    <title>NWBP — 把喜爱的声音，放回桌面</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳转到正文</a>
+    <header class="site-header" id="top">
+      <div class="nav-shell wrap">
+        <a class="brand" href="#top" aria-label="NWBP 首页">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>NWBP</span>
+        </a>
+        <nav class="primary-nav" aria-label="主导航">
+          <a href="#features">功能</a>
+          <a href="#preview">预览</a>
+          <a href="#download">下载</a>
+          <a href="#about">关于</a>
+        </nav>
+        <a class="nav-download" href="#download">下载正式版 <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <a class="release-pill" href="https://github.com/Zuo-CNSD/NWBP/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">
+            <span class="pill-dot" aria-hidden="true"></span> 正式版 1.00 已发布 <span aria-hidden="true">↗</span>
+          </a>
+          <h1 id="hero-title">把喜爱的声音，<br /><em>放回桌面。</em></h1>
+          <p class="hero-description">一个窗口，连接哔哩哔哩、网易云音乐与本地曲库。让播放、发现与收藏，回到顺手的位置。</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#download">获取 NWBP <span aria-hidden="true">↗</span></a>
+            <a class="button button-light" href="#preview">看看它的样子 <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-meta">适用于 macOS、Windows 和 Linux <span aria-hidden="true">·</span> 免费开源</p>
+        </div>
+        <div class="hero-visual reveal" aria-label="NWBP 正式版音乐搜索界面预览">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <a class="app-window" href="assets/search-current.png" target="_blank" rel="noopener noreferrer" aria-label="查看完整的 NWBP 正式版音乐搜索窗口截图">
+            <img src="assets/search-current.png" alt="NWBP 正式版深色搜索界面，展示网易云音乐曲目、侧栏与播放控制" fetchpriority="high" width="2400" height="1600" />
+          </a>
+        </div>
+        <div class="hero-index" aria-hidden="true">01 / LISTEN BETTER</div>
+      </section>
+
+      <div class="platform-strip">
+        <div class="wrap platform-inner">
+          <span>YOUR MUSIC, YOUR DESKTOP</span>
+          <div><span>macOS</span><b>✳</b><span>Windows</span><b>✳</b><span>Linux</span></div>
+          <span>NWBP 1.00</span>
+        </div>
+      </div>
+
+      <section class="section features wrap" id="features" aria-labelledby="features-title">
+        <div class="section-heading reveal">
+          <span class="eyebrow">DESIGNED FOR LISTENING / 01</span>
+          <h2 id="features-title">音乐很多。<br /><span>界面应该简单。</span></h2>
+          <p>把常用的内容来源放在同一个桌面播放器里，把注意力留给音乐本身。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-symbol" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 15h32M8 24h23M8 33h32"/><circle cx="35" cy="24" r="5"/></svg></div>
+            <span class="feature-number">01 / SOURCE</span>
+            <h3>不必在音源之间来回跳</h3>
+            <p>B 站、网易云音乐和本地文件各有自己的入口；搜索时可按需切换来源，曲库依旧清楚有序。</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-symbol" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 13h27M10 24h27M10 35h18"/><path d="m32 31 7 4-7 4z"/></svg></div>
+            <span class="feature-number">02 / PLAY</span>
+            <h3>完整地播放一张歌单</h3>
+            <p>一键将歌单或专辑中的曲目加入播放队列。最近播放、历史记录和收藏，也都触手可及。</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-symbol" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="7" y="10" width="34" height="23" rx="4"/><path d="M16 39h16M24 33v6M13 19h22M18 25h12"/></svg></div>
+            <span class="feature-number">03 / LYRICS</span>
+            <h3>歌词，不止在播放器里</h3>
+            <p>逐字歌词、翻译和罗马音可以跟着节奏走；独立桌面歌词窗口，让每一句都陪在眼前。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="showcase-section" id="preview" aria-labelledby="preview-title">
+        <div class="wrap showcase-wrap">
+          <div class="showcase-header reveal">
+            <div><span class="eyebrow">A CLOSER LOOK / 02</span><h2 id="preview-title">一眼熟悉，<br /><span>每处都更顺手。</span></h2></div>
+            <p>从音乐搜索到界面设置，NWBP 给桌面上的音乐留出刚刚好的空间。</p>
+          </div>
+          <div class="preview-tabs" role="tablist" aria-label="界面预览">
+            <button class="preview-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="preview-panel" id="tab-search" data-preview="search">音乐搜索 <span>01</span></button>
+            <button class="preview-tab" type="button" role="tab" aria-selected="false" aria-controls="preview-panel" id="tab-settings" data-preview="settings" tabindex="-1">浅色设置 <span>02</span></button>
+          </div>
+          <div class="preview-frame reveal" id="preview-panel" role="tabpanel" aria-labelledby="tab-search" data-theme="dark">
+            <img id="preview-image" src="assets/search-current.png" alt="NWBP 正式版音乐搜索界面截图" width="2400" height="1600" loading="lazy" />
+          </div>
+          <div class="preview-caption"><span id="preview-counter">01 — 02</span><p id="preview-description">完整窗口实图：搜索网易云音乐中的曲目，直接建立播放队列。</p><a id="preview-full" href="assets/search-current.png" target="_blank" rel="noopener noreferrer">查看完整截图 ↗</a></div>
+        </div>
+      </section>
+
+      <section class="section details wrap" aria-labelledby="details-title">
+        <div class="details-lead reveal">
+          <span class="eyebrow">MAKE IT YOURS / 03</span>
+          <h2 id="details-title">你的桌面，<br /><span>你的节奏。</span></h2>
+          <p>黑与白是起点。浅色、深色、液态玻璃或简洁扁平界面，都能在设置中找到合适的样子。</p>
+        </div>
+        <div class="detail-list">
+          <div class="detail-row reveal"><span>01</span><div><h3>恰到好处的窗口</h3><p>主窗口、全屏播放器与 Mini Player，适应不同的聆听场景。</p></div><span aria-hidden="true">↗</span></div>
+          <div class="detail-row reveal"><span>02</span><div><h3>看得见的个性</h3><p>主题、主色、背景、圆角与显示密度，都由你决定。</p></div><span aria-hidden="true">↗</span></div>
+          <div class="detail-row reveal"><span>03</span><div><h3>常用功能，放在手边</h3><p>播放历史、下载、桌面歌词与多语言界面，顺着你的习惯使用。</p></div><span aria-hidden="true">↗</span></div>
+        </div>
+      </section>
+
+      <section class="download-section" id="download" aria-labelledby="download-title">
+        <div class="wrap">
+          <div class="download-heading reveal"><span class="eyebrow">GET STARTED / 04</span><h2 id="download-title">现在，开始聆听。</h2><p>选择你的系统，下载 NWBP 正式版 1.00。</p></div>
+          <div class="download-grid">
+            <article class="download-card reveal"><div class="os-icon" aria-hidden="true">⌘</div><h3>macOS</h3><p>适用于 Apple 芯片与 Intel Mac。</p><div class="download-links"><a href="https://github.com/Zuo-CNSD/NWBP/releases/download/v1.0.0/NWBP-1.0.0-mac-arm64.dmg">Apple 芯片 <span>↗</span></a><a href="https://github.com/Zuo-CNSD/NWBP/releases/download/v1.0.0/NWBP-1.0.0-mac-x64.dmg">Intel 芯片 <span>↗</span></a></div></article>
+            <article class="download-card reveal"><div class="os-icon windows-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Windows</h3><p>安装程序，适用于 x64 与 ARM64。</p><div class="download-links"><a href="https://github.com/Zuo-CNSD/NWBP/releases/download/v1.0.0/NWBP-1.0.0-win-setup-x64.exe">Windows x64 <span>↗</span></a><a href="https://github.com/Zuo-CNSD/NWBP/releases/download/v1.0.0/NWBP-1.0.0-win-setup-arm64.exe">Windows ARM64 <span>↗</span></a></div></article>
+            <article class="download-card reveal"><div class="os-icon" aria-hidden="true">◧</div><h3>Linux</h3><p>AppImage 或 deb，覆盖 x64 与 ARM64。</p><div class="download-links"><a href="https://github.com/Zuo-CNSD/NWBP/releases/download/v1.0.0/NWBP-1.0.0-linux-x86_64.AppImage">AppImage · x64 <span>↗</span></a><a href="https://github.com/Zuo-CNSD/NWBP/releases/download/v1.0.0/NWBP-1.0.0-linux-arm64.AppImage">AppImage · ARM64 <span>↗</span></a><a href="https://github.com/Zuo-CNSD/NWBP/releases/download/v1.0.0/NWBP-1.0.0-linux-amd64.deb">deb · x64 <span>↗</span></a><a href="https://github.com/Zuo-CNSD/NWBP/releases/download/v1.0.0/NWBP-1.0.0-linux-arm64.deb">deb · ARM64 <span>↗</span></a></div></article>
+          </div>
+          <p class="download-note">所有安装包也可在 <a href="https://github.com/Zuo-CNSD/NWBP/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">GitHub Releases ↗</a> 查看。当前版本升级需手动下载安装包；macOS 包尚未经过 Apple 公证。</p>
+        </div>
+      </section>
+
+      <section class="section about wrap" id="about" aria-labelledby="about-title">
+        <div class="about-main reveal"><span class="eyebrow">OPEN BY DESIGN / 05</span><h2 id="about-title">好音乐，<br /><span>也值得开放。</span></h2><p>NWBP 是免费开源的第三方桌面播放器。你可以查看源码、报告问题，也可以参与改进它。</p><a class="button button-dark" href="https://github.com/Zuo-CNSD/NWBP" target="_blank" rel="noopener noreferrer">在 GitHub 查看源码 <span aria-hidden="true">↗</span></a></div>
+        <div class="about-side reveal"><div><span>LICENSE</span><strong>GPL-3.0</strong></div><div><span>BASED ON</span><strong>wood3n / biu</strong></div><div><span>RELEASE</span><strong>1.00 / v1.0.0</strong></div><p>NWBP 与哔哩哔哩、网易云音乐均无官方关联或背书。相关内容的可用性取决于平台接口与账号权限。</p></div>
+      </section>
+
+      <section class="faq wrap" aria-labelledby="faq-title"><div><span class="eyebrow">GOOD TO KNOW</span><h2 id="faq-title">你可能还想知道</h2></div><div class="faq-list"><details><summary>NWBP 可以自动更新吗？<span aria-hidden="true">+</span></summary><p>正式版 1.00 会提示新版本，但不会自动替换程序。升级时请到下载页获取新的安装包。</p></details><details><summary>需要登录账号才能使用吗？<span aria-hidden="true">+</span></summary><p>播放本地音乐无需平台账号。访问 B 站个人收藏和网易云个人歌单等内容，需要登录对应平台。</p></details><details><summary>这是 B 站或网易云的官方应用吗？<span aria-hidden="true">+</span></summary><p>不是。NWBP 是独立的开源第三方项目，与两个平台均无官方关联或背书。</p></details></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="wrap footer-top"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>NWBP</span></a><p>让音乐，回到桌面。</p><a href="#top">回到顶部 ↑</a></div><div class="wrap footer-bottom"><span>© 2026 NWBP · 开源桌面音乐播放器</span><nav aria-label="页脚导航"><a href="https://github.com/Zuo-CNSD/NWBP" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://github.com/Zuo-CNSD/NWBP/issues" target="_blank" rel="noopener noreferrer">问题反馈</a><a href="https://github.com/Zuo-CNSD/NWBP/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">开源许可</a></nav></div></footer>
+  </body>
+</html>
